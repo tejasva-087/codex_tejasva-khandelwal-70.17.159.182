@@ -1,0 +1,15 @@
+%list {
+  list-style: none;
+}
+
+%link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

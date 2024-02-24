@@ -1,0 +1,155 @@
+.header {
+  @extend %flex-center;
+  justify-content: space-between;
+  position: fixed;
+
+  top: 0;
+  height: 9.8rem;
+  justify-self: start;
+  padding: 1.4rem 2.4rem;
+  background-color: #ffffff;
+  width: 100%;
+
+  @media (max-width: 43.75em) {
+    flex-direction: column;
+  }
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  gap: 4.8rem;
+
+  @media (max-width: 43.75em) {
+    margin-top: 1.4rem;
+  }
+}
+
+.header-logo {
+  width: 24.4rem;
+}
+
+.section-hero {
+  @extend %flex-center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+    url(/assets/hero-bg.jpeg);
+  background-size: cover;
+  background-position: end;
+  flex-direction: column;
+}
+
+.hero-text-box {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-detail {
+  @extend %flex-center;
+  height: 60vh;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.detail-text-box {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  @media (max-width: 62.5em) {
+    width: 90%;
+  }
+}
+
+.img-box {
+  @media (max-width: 43.75em) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    & img:last-child {
+      display: none;
+    }
+  }
+}
+
+.section-features {
+  @extend %flex-center;
+  padding: 10.2rem 6.4rem;
+  background-color: #fff;
+  flex-direction: column;
+  gap: 5.4rem;
+}
+
+.feature-box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 90%;
+  row-gap: 4.6rem;
+  column-gap: 4.6rem;
+
+  @media (max-width: 43.75em) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.feature-box {
+  text-align: center;
+}
+
+.section-pricing {
+  @extend %flex-center;
+  padding: 8.2rem 6.4rem;
+  background-color: #fff;
+  flex-direction: column;
+  gap: 3.4rem;
+}
+
+.pricing-text-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.8rem;
+
+  @media (max-width: 75em) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 3.4rem;
+  }
+
+  @media (max-width: 56.25em) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.price-box {
+  padding: 6.4rem 2.6rem;
+  border: 0.4rem solid #ddd;
+  border-radius: 3.4rem;
+}
+
+.price-main {
+  background-color: #ddd;
+}
+
+.price-feature-box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.price-feature-box {
+  display: grid;
+  grid-template-columns: 1fr 3.4rem;
+}
+
+.footer {
+  @extend %flex-center;
+  flex-direction: column;
+  padding: 6.4rem 0;
+}
+
+.footer-logo {
+  @media (max-width: 43.75em) {
+    width: 20.4rem;
+  }
+}

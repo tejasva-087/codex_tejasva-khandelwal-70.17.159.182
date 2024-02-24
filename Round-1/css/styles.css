@@ -1,0 +1,122 @@
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.hero-text-box {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 1.2rem 1.4rem 2.6rem 1.4rem rgba(0, 0, 0, 0.05);
+  border-radius: 3.4rem;
+}
+
+.text-box-left {
+  text-align: center;
+  padding: 5rem 6rem;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 3.4rem;
+}
+
+.circle-bg {
+  position: relative;
+  z-index: 1;
+}
+
+.circle-bg::after {
+  content: "";
+  width: 15.4rem;
+  height: 15.4rem;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.text-box-right {
+  width: 100%;
+  padding: 5rem 4rem;
+  background-color: #fff;
+  border-radius: 3.4rem;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.box {
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.4rem 1.8rem;
+  border-radius: 0.8rem;
+}
+
+.text-red {
+  color: hsl(0, 100%, 67%) !important;
+}
+
+.bg-red {
+  background-color: rgba(255, 87, 87, 0.07);
+}
+
+.text-yellow {
+  color: hsl(39, 100%, 56%) !important;
+}
+
+.bg-yellow {
+  background-color: rgba(255, 176, 31, 0.07) !important;
+}
+
+.text-green {
+  color: hsl(166, 100%, 37%) !important;
+}
+
+.bg-green {
+  background-color: rgba(0, 189, 145, 0.07) !important;
+}
+
+.text-blue {
+  color: hsl(234, 85%, 45%) !important;
+}
+
+.bg-blue {
+  background-color: rgb(17, 37, 212, 0.07) !important;
+}
+
+.btn-link:link,
+.btn-link:visited {
+  color: #fff;
+  background-color: hsl(224, 30%, 27%);
+  width: 100%;
+  padding: 2rem 3rem;
+  text-align: center;
+  border-radius: 3.4rem;
+  transition: all 0.6s;
+}
+
+.btn-link:hover,
+.btn-link:active {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}

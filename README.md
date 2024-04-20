@@ -10,5 +10,5 @@ After going to the second round we battled against time and give our 100% and cr
 I used HTML, CSS and SASS to create the website. After going through the sites created by other's, made me realize how different technologies like the Tailwind CSS and Bootstrap can help save a lot of time and increase productivity. I will definitely learn those skills, practice them and never give up.
 Even though we didn't got selected for the third round we gave our best and I am very happy I took part in this hackathon.
 
-[Round 1:](https://codex-round-2-tejasav-khandelwal.netlify.app/)
-[Round 2:](https://codex-round-2-tejasav-khandelwal.netlify.app/)
+[Round 1: UI live site](https://codex-round-2-tejasav-khandelwal.netlify.app/)
+[Round 2: live website](https://codex-round-2-tejasav-khandelwal.netlify.app/)
